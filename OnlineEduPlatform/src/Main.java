@@ -1,8 +1,9 @@
-import App.Facade;
+import Facade.App;
+import Facade.Facade;
 public class Main {
     public static void main(String[] args) throws Exception {
         Facade facade = new Facade();
-        App.App app = new App.App(facade);
+        App app = new App(facade);
         app.start();
     }
 }

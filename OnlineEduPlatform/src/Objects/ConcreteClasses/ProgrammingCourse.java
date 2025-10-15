@@ -1,26 +1,10 @@
 package Objects.ConcreteClasses;
 
-public class ProgrammingCourse implements Objects.Course {
-    private int currentCourse = 1;
-    private boolean isCompleted = false;
-    private String courseName;
+import Objects.BasicCourse;
 
-    @Override
-    public void deliverContent() {
-        if(getCurrentCourse()!=4){
-            currentCourse += 1;
-        }
-        else{
-            isCompleted = true;
-        }
+public abstract class ProgrammingCourse extends BasicCourse {
+    public ProgrammingCourse(){
+        super();
+        setCourseName("Programming Course");
     }
-    @Override 
-    public boolean getCompletitionStatus() {
-        return isCompleted;
-    }
-    @Override
-    public int getCurrentCourse() {
-        return currentCourse;
-    }
-    
 }
